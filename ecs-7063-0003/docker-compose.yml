@@ -13,7 +13,7 @@ services:
       TERM: xterm
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /data/db:/data/db
+      - /mongo_cluster/data/db:/data/db
   bmsmongorsconf3:
     container_name: bmsmongorsconf3
     image:  mongo:3.4
