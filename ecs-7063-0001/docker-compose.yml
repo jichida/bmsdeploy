@@ -1,0 +1,42 @@
+version: '2'
+services:
+  bmsmongors1:
+    container_name: bmsmongors1
+    image:  mongo:3.4
+    restart: always
+    command: mongod --shardsvr --replSet bmsmongors --dbpath /data/db --port 27018
+    ports:
+      - 27018:27018
+    expose:
+      - "27018"
+    environment:
+      TERM: xterm
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /data/db:/data/db
+  bmsmongorsconf1:
+    container_name: bmsmongorsconf1
+    image:  mongo:3.4
+    restart: always
+    command: mongod --configsvr --replSet bmsmongorsconf --dbpath /data/db --port 27019
+    environment:
+      TERM: xterm
+    expose:
+      - "27019"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /mongo_cluster/config:/data/db
+  bmsmongos1:
+      container_name: bmsmongos1
+      image:  mongo:3.4
+      restart: always
+      depends_on:
+        - bmsmongorsconf1
+        - bmsmongors1
+      command: mongos --configdb bmsmongorsconf/192.168.1.20:27019,192.168.1.114:27019,192.168.1.136:27019 --port 27017
+      ports:
+        - 27017:27017
+      expose:
+        - "27017"
+      volumes:
+        - /etc/localtime:/etc/localtime:ro
