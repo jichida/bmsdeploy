@@ -21,6 +21,8 @@ services:
     command: mongod --configsvr --replSet bmsmongorsconf --dbpath /data/db --port 27019
     environment:
       TERM: xterm
+    ports:
+      - 27019:27019
     expose:
       - "27019"
     volumes:
@@ -30,6 +32,7 @@ services:
       container_name: bmsmongos1
       image:  mongo:3.4
       restart: always
+      network_mode: "host"
       depends_on:
         - bmsmongorsconf1
         - bmsmongors1
