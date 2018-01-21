@@ -36,7 +36,7 @@ services:
       depends_on:
         - bmsmongorsconf1
         - bmsmongors1
-      command: mongos --configdb bmsmongorsconf/192.168.1.20:27019,192.168.1.114:27019,192.168.1.136:27019 --port 27017
+      command: mongos --configdb 192.168.1.20:27019,192.168.1.114:27019,192.168.1.136:27019 --port 27017
       ports:
         - 27017:27017
       expose:
