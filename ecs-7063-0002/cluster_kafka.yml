@@ -1,6 +1,7 @@
 version: '2'
 services:
   zookeeper:
+      container_name: zookeeper
       image: zookeeper:3.4.9
       hostname: 192.168.1.114
       network_mode: "host"
@@ -14,6 +15,7 @@ services:
         - /catlcluster/zk-multiple-kafka-multiple/zoo/data:/data
         - /catlcluster/zk-multiple-kafka-multiple/zoo/datalog:/datalog
   kafka:
+    container_name: kafka
     image: confluentinc/cp-kafka:4.0.0
     hostname: 192.168.1.114
     network_mode: "host"
