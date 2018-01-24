@@ -72,4 +72,4 @@ services:
       expose:
         - "27007"
       volumes:
-        - /catlcluster/etc/localtime:/etc/localtime:ro
+        - /etc/localtime:/etc/localtime:ro
