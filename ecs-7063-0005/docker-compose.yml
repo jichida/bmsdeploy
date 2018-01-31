@@ -10,7 +10,7 @@ services:
        - "81"
     volumes:
         - ./nginx.conf:/etc/nginx/conf.d/default.conf
-        - /root/bms/deploy/dist:/usr/share/nginx/bms
+        - /root/bms/deploy/dist:/usr/share/nginx/html
   bmsserver:
     image: node:6.11.2
     restart: always
