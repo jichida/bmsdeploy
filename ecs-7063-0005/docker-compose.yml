@@ -18,10 +18,10 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/restfulsrv:/app
       - /root/bms/deploy/dist/log:/log
     environment:
-      - /etc/localtime:/etc/localtime:ro
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - listenport=5012
