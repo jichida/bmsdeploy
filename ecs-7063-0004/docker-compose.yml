@@ -6,6 +6,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -19,6 +20,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -32,6 +34,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -45,6 +48,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -58,6 +62,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -71,6 +76,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -84,6 +90,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
@@ -97,6 +104,7 @@ services:
     command: node ./index.js
     working_dir: /app
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - /root/kafkadb:/app
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
