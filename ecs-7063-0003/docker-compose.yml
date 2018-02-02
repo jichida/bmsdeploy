@@ -60,6 +60,7 @@ services:
       container_name: zookeeper
       image: zookeeper:3.4.9
       hostname: 192.168.1.136
+      restart: always
       network_mode: "host"
       ports:
         - "2181:2181"
@@ -74,6 +75,7 @@ services:
     container_name: kafka
     image: confluentinc/cp-kafka:4.0.0
     hostname: 192.168.1.136
+    restart: always
     network_mode: "host"
     ports:
       - "9092:9092"
