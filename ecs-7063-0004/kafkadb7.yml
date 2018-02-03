@@ -1,6 +1,7 @@
 version: '2'
 services:
-  kafkadb1:
+  kafkadb7:
+    container_name: kafkadb7
     image: node:6.11.2
     restart: always
     command: node ./index.js
