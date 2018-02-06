@@ -1,0 +1,122 @@
+version: '2'
+services:
+  kafkadb1:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=41
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb2:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=42
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb3:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=43
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb4:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=44
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb5:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=45
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb6:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=46
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb7:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=47
+      - partitionnumber=48
+    network_mode: "host"
+  kafkadb8:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - mongos=true
+      - NodeID=48
+      - partitionnumber=48
+    network_mode: "host"
