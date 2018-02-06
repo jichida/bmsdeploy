@@ -12,7 +12,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=21
+      - NodeID=521
       - partitionnumber=48
     network_mode: "host"
   kafkadb2:
@@ -27,7 +27,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=22
+      - NodeID=522
       - partitionnumber=48
     network_mode: "host"
   kafkadb3:
@@ -42,7 +42,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=23
+      - NodeID=523
       - partitionnumber=48
     network_mode: "host"
   kafkadb4:
@@ -57,7 +57,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=24
+      - NodeID=524
       - partitionnumber=48
     network_mode: "host"
   kafkadb5:
@@ -72,7 +72,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=25
+      - NodeID=525
       - partitionnumber=48
     network_mode: "host"
   kafkadb6:
@@ -87,7 +87,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=26
+      - NodeID=526
       - partitionnumber=48
     network_mode: "host"
   kafkadb7:
@@ -102,7 +102,7 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=27
+      - NodeID=527
       - partitionnumber=48
     network_mode: "host"
   kafkadb8:
@@ -117,6 +117,6 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=28
+      - NodeID=528
       - partitionnumber=48
     network_mode: "host"
