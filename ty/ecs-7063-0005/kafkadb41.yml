@@ -1,6 +1,6 @@
 version: '2'
 services:
-  kafkadb1:
+  kafkadb41:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -15,7 +15,7 @@ services:
       - NodeID=541
       - partitionnumber=48
     network_mode: "host"
-  kafkadb2:
+  kafkadb42:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -30,7 +30,7 @@ services:
       - NodeID=542
       - partitionnumber=48
     network_mode: "host"
-  kafkadb3:
+  kafkadb43:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -45,7 +45,7 @@ services:
       - NodeID=543
       - partitionnumber=48
     network_mode: "host"
-  kafkadb4:
+  kafkadb44:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -60,7 +60,7 @@ services:
       - NodeID=544
       - partitionnumber=48
     network_mode: "host"
-  kafkadb5:
+  kafkadb45:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -75,7 +75,7 @@ services:
       - NodeID=545
       - partitionnumber=48
     network_mode: "host"
-  kafkadb6:
+  kafkadb46:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -90,7 +90,7 @@ services:
       - NodeID=546
       - partitionnumber=48
     network_mode: "host"
-  kafkadb7:
+  kafkadb47:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -105,7 +105,7 @@ services:
       - NodeID=547
       - partitionnumber=48
     network_mode: "host"
-  kafkadb8:
+  kafkadb48:
     image: node:6.11.2
     restart: always
     command: node ./index.js
