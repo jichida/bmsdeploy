@@ -104,7 +104,7 @@ services:
       KAFKA_BROKER_ID: 1
       KAFKA_LOG_DIR: "/tmp/kafkalogs"
       KAFKA_LOG_RETENTION_HOURS: 3
-      KAFKA_DEFAULT_REPLICATION_FACTOR: 2
+      KAFKA_DEFAULT_REPLICATION_FACTOR: 1
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
       - /etc/localtime:/etc/localtime:ro
