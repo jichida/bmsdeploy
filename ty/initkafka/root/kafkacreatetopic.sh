@@ -6,3 +6,4 @@ kafka-topics --create --zookeeper  192.168.1.20:2181 --replication-factor 1 --pa
 kafka-topics --create --zookeeper  192.168.1.20:2181 --replication-factor 1 --partitions 48 --topic bms.index
 kafka-consumer-groups --zookeeper  192.168.1.20:2181 --group bmsmaster --reset-offsets --to-earliest --all-topics --execute
 kafka-consumer-groups --zookeeper  192.168.1.20:2181 --group bmsdb --reset-offsets --to-earliest --all-topics --execute
+exit
