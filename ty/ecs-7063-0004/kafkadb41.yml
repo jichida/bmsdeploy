@@ -13,7 +13,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=441
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb442:
     image: node:6.11.2
@@ -28,7 +28,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=442
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb443:
     image: node:6.11.2
@@ -43,7 +43,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=443
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb444:
     image: node:6.11.2
@@ -58,7 +58,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=444
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb445:
     image: node:6.11.2
@@ -73,7 +73,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=445
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb446:
     image: node:6.11.2
@@ -88,7 +88,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=446
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb447:
     image: node:6.11.2
@@ -103,7 +103,7 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=447
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
   kafkadb448:
     image: node:6.11.2
@@ -118,5 +118,5 @@ services:
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
       - NodeID=448
-      - partitionnumber=348
+      - partitionnumber=384
     network_mode: "host"
