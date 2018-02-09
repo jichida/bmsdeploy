@@ -1,6 +1,6 @@
 version: '2'
 services:
-  kafkadb11:
+  kafkadb111:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -12,10 +12,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=511
+      - NodeID=111
       - partitionnumber=48
     network_mode: "host"
-  kafkadb12:
+  kafkadb112:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -27,10 +27,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=512
+      - NodeID=112
       - partitionnumber=48
     network_mode: "host"
-  kafkadb13:
+  kafkadb113:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -42,10 +42,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=513
+      - NodeID=113
       - partitionnumber=48
     network_mode: "host"
-  kafkadb14:
+  kafkadb114:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -57,10 +57,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=514
+      - NodeID=114
       - partitionnumber=48
     network_mode: "host"
-  kafkadb15:
+  kafkadb115:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -72,10 +72,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=515
+      - NodeID=115
       - partitionnumber=48
     network_mode: "host"
-  kafkadb16:
+  kafkadb116:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -87,10 +87,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=516
+      - NodeID=116
       - partitionnumber=48
     network_mode: "host"
-  kafkadb17:
+  kafkadb117:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -102,10 +102,10 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=517
+      - NodeID=117
       - partitionnumber=48
     network_mode: "host"
-  kafkadb18:
+  kafkadb118:
     image: node:6.11.2
     restart: always
     command: node ./index.js
@@ -117,6 +117,6 @@ services:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
       - mongos=true
-      - NodeID=518
+      - NodeID=118
       - partitionnumber=48
     network_mode: "host"
