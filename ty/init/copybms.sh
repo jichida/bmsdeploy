@@ -1,6 +1,8 @@
-scp /root/bmsdeploy/ty/ecs-7063-0001/docker-compose.yml root@192.168.1.20:/root/
-scp /root/bmsdeploy/ty/ecs-7063-0002/docker-compose.yml root@192.168.1.114:/root/
-scp /root/bmsdeploy/ty/ecs-7063-0003/docker-compose.yml root@192.168.1.136:/root/
-scp /root/bmsdeploy/ty/ecs-7063-0004/*.yml root@192.168.1.45:/root/
-cp /root/bmsdeploy/ty/ecs-7063-0005/docker-compose.yml /root/docker-compose.yml
-cp /root/bmsdeploy/ty/ecs-7063-0005/nginx.conf /root/nginx.conf
+cd /root
+rm fr ./*.tar.gz
+tar -czvf ./bms.tar.gz ./bms/deploy/kafkadb
+tar -czvf ./bmsdeploy.tar.gz ./bmsdeploy
+scp /root/*.tar.gz root@192.168.1.20:/root/
+scp /root/*.tar.gz root@192.168.1.114:/root/
+scp /root/*.tar.gz root@192.168.1.136:/root/
+scp /root/*.tar.gz root@192.168.1.45:/root/
