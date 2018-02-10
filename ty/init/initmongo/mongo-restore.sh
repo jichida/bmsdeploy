@@ -11,5 +11,5 @@ else
 	cp $1 $TMP_DIR$FILENAME
 fi
 
-docker run -it --rm --link mongo:3.4 -v $TMP_DIR:/tmp mongo bash -c 'mongorestore --drop -v --host 192.168.1.20:27007 --db '$2' /tmp/'$FILENAME
+docker run -it --rm --link mongo:mongo -v $TMP_DIR:/tmp mongo:3.4 bash -c 'mongorestore --drop -v --host 192.168.1.20:27007 --db '$2' /tmp/'$FILENAME
 rm -rf $TMP_DIR
