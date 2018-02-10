@@ -1,0 +1,75 @@
+version: '2'
+services:
+  bmsshardres1:
+    container_name: bmsshardres1
+    image:  mongo:3.4
+    restart: always
+    command: mongod --shardsvr --replSet bmsshardres1 --dbpath /data/db --port 20001
+    ports:
+      - 20001:20001
+    expose:
+      - "20001"
+    environment:
+      TERM: xterm
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /catlcluster/mongo_cluster/bmsshardres1/db:/data/db
+  bmsshardres2:
+    container_name: bmsshardres2
+    image:  mongo:3.4
+    restart: always
+    command: mongod --shardsvr --replSet bmsshardres2 --dbpath /data/db --port 20002
+    ports:
+      - 20002:20002
+    expose:
+      - "20002"
+    environment:
+      TERM: xterm
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /catlcluster/mongo_cluster/bmsshardres2/db:/data/db
+  bmsshardres3:
+    container_name: bmsshardres3
+    image:  mongo:3.4
+    restart: always
+    command: mongod --shardsvr --replSet bmsshardres3 --dbpath /data/db --port 20003
+    ports:
+      - 20003:20003
+    expose:
+      - "20003"
+    environment:
+      TERM: xterm
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /catlcluster/mongo_cluster/bmsshardres3/db:/data/db
+  bmsconfigsrv:
+    container_name: bmsconfigsrv
+    image:  mongo:3.4
+    restart: always
+    command: mongod --configsvr --replSet bmsconfigsrv --dbpath /data/db --port 27019
+    environment:
+      TERM: xterm
+    ports:
+      - 27019:27019
+    expose:
+      - "27019"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /catlcluster/mongo_cluster/bmsconfigsrv:/data/db
+  bmsmongos:
+      container_name: bmsmongos
+      image:  mongo:3.4
+      restart: always
+      network_mode: "host"
+      depends_on:
+        - bmsconfigsrv
+        - bmsshardres1
+        - bmsshardres2
+        - bmsshardres3
+      command: mongos --configdb bmsconfigsrv/192.168.1.20:27019,192.168.1.114:27019,192.168.1.136:27019 --port 27007
+      ports:
+        - 27007:27007
+      expose:
+        - "27007"
+      volumes:
+        - /etc/localtime:/etc/localtime:ro
