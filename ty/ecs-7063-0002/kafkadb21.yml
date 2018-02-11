@@ -9,8 +9,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=221
       - partitionnumber=384
@@ -24,8 +24,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=222
       - partitionnumber=384
@@ -39,8 +39,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=223
       - partitionnumber=384
@@ -54,8 +54,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=224
       - partitionnumber=384
@@ -69,8 +69,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=225
       - partitionnumber=384
@@ -84,8 +84,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=226
       - partitionnumber=384
@@ -99,8 +99,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=227
       - partitionnumber=384
@@ -114,8 +114,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
-      - KAFKA_HOST=192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsnew
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=228
       - partitionnumber=384
