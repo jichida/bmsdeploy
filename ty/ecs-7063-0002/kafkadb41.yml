@@ -3,7 +3,7 @@ services:
   kafkadb241:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -18,7 +18,7 @@ services:
   kafkadb242:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -33,7 +33,7 @@ services:
   kafkadb243:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -48,7 +48,7 @@ services:
   kafkadb244:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -63,7 +63,7 @@ services:
   kafkadb245:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -78,7 +78,7 @@ services:
   kafkadb246:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -93,7 +93,7 @@ services:
   kafkadb247:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -108,7 +108,7 @@ services:
   kafkadb248:
     image: node:6.11.2
     restart: always
-    command: node ./index.js
+    command: node --max-old-space-size=8192 ./index.js
     working_dir: /app
     volumes:
       - /etc/localtime:/etc/localtime:ro

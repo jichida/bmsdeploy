@@ -3,7 +3,7 @@ services:
     logserver:
       image: node:6.11.2
       restart: always
-      command: node ./index.js
+      command: node --max-old-space-size=8192 ./index.js
       working_dir: /app
       volumes:
         - /etc/localtime:/etc/localtime:ro
