@@ -14,6 +14,8 @@ services:
       - mongos=true
       - NodeID=111
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup            
     network_mode: "host"
   kafkadb112:
     image: node:6.11.2
@@ -29,6 +31,8 @@ services:
       - mongos=true
       - NodeID=112
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup
     network_mode: "host"
   kafkadb113:
     image: node:6.11.2
@@ -44,6 +48,8 @@ services:
       - mongos=true
       - NodeID=113
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup
     network_mode: "host"
   kafkadb114:
     image: node:6.11.2
@@ -59,6 +65,8 @@ services:
       - mongos=true
       - NodeID=114
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup
     network_mode: "host"
   kafkadb115:
     image: node:6.11.2
@@ -74,6 +82,8 @@ services:
       - mongos=true
       - NodeID=115
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup
     network_mode: "host"
   kafkadb116:
     image: node:6.11.2
@@ -89,6 +99,8 @@ services:
       - mongos=true
       - NodeID=116
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup
     network_mode: "host"
   kafkadb117:
     image: node:6.11.2
@@ -104,6 +116,8 @@ services:
       - mongos=true
       - NodeID=117
       - partitionnumber=384
+      - IndexTopic=bmsindex
+      - GroupId=kafkabmsgroup
     network_mode: "host"
   kafkadb118:
     image: node:6.11.2
