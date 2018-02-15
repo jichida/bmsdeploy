@@ -30,7 +30,7 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: "192.168.1.20:2181,192.168.1.114:2181,192.168.1.136:2181"
       KAFKA_BROKER_ID: 3
       KAFKA_LOG_DIR: "/tmp/kafkalogs"
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: true
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 1
       KAFKA_LOG_RETENTION_HOURS: 168
       KAFKA_DEFAULT_REPLICATION_FACTOR: 2
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
