@@ -16,7 +16,7 @@ services:
       - NodeID=211
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb212:
     image: node:6.11.2
@@ -34,7 +34,7 @@ services:
       - NodeID=212
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb213:
     image: node:6.11.2
@@ -52,7 +52,7 @@ services:
       - NodeID=213
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb214:
     image: node:6.11.2
@@ -70,7 +70,7 @@ services:
       - NodeID=214
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb215:
     image: node:6.11.2
@@ -88,7 +88,7 @@ services:
       - NodeID=215
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb216:
     image: node:6.11.2
@@ -106,7 +106,7 @@ services:
       - NodeID=216
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb217:
     image: node:6.11.2
@@ -124,7 +124,7 @@ services:
       - NodeID=217
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"
   kafkadb218:
     image: node:6.11.2
@@ -142,5 +142,5 @@ services:
       - NodeID=218
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup        
+      - GroupId=bmsgid        
     network_mode: "host"

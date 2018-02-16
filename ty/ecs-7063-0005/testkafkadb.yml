@@ -16,5 +16,5 @@ services:
       - NodeID=999
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=kafkabmsgroup
+      - GroupId=bmsgid
     network_mode: "host"
