@@ -1,0 +1,14 @@
+version: '2'
+services:
+  bmsmongos:
+      container_name: bmsmongos
+      image:  mongo:3.4
+      restart: always
+      network_mode: "host"
+      command: mongos --configdb bmsconfigsrv/192.168.1.20:27019,192.168.1.114:27019,192.168.1.136:27019 --port 27007
+      ports:
+        - 27007:27007
+      expose:
+        - "27007"
+      volumes:
+        - /etc/localtime:/etc/localtime:ro
