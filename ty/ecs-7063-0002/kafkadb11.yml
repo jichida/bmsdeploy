@@ -16,6 +16,7 @@ services:
       - NodeID=211
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb212:
@@ -34,6 +35,7 @@ services:
       - NodeID=212
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb213:
@@ -52,6 +54,7 @@ services:
       - NodeID=213
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb214:
@@ -70,6 +73,7 @@ services:
       - NodeID=214
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb215:
@@ -88,6 +92,7 @@ services:
       - NodeID=215
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb216:
@@ -106,6 +111,7 @@ services:
       - NodeID=216
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb217:
@@ -124,6 +130,7 @@ services:
       - NodeID=217
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"
   kafkadb218:
@@ -142,5 +149,6 @@ services:
       - NodeID=218
       - partitionnumber=384
       - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=bmsgid        
     network_mode: "host"

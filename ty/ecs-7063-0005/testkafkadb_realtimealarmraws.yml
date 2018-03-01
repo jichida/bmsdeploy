@@ -1,0 +1,23 @@
+version: '2'
+services:
+  kafkadbtestone:
+    image: node:6.11.2
+    restart: always
+    command: node --max-old-space-size=8192 ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/kafkadb:/app
+      - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+    environment:
+      - DEBUG=*,-mquery
+      - DEBUG_COLORS=1
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
+      - mongos=true
+      - NodeID=999
+      - partitionnumber=384
+      - IndexTopic=bmsindex
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgid
+    network_mode: "host"

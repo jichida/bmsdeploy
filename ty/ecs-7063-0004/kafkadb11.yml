@@ -16,7 +16,8 @@ services:
       - NodeID=411
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb412:
     image: node:6.11.2
@@ -34,7 +35,8 @@ services:
       - NodeID=412
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb413:
     image: node:6.11.2
@@ -52,7 +54,8 @@ services:
       - NodeID=413
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb414:
     image: node:6.11.2
@@ -70,7 +73,8 @@ services:
       - NodeID=414
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb415:
     image: node:6.11.2
@@ -88,7 +92,8 @@ services:
       - NodeID=415
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb416:
     image: node:6.11.2
@@ -106,7 +111,8 @@ services:
       - NodeID=416
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb417:
     image: node:6.11.2
@@ -124,7 +130,8 @@ services:
       - NodeID=417
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
   kafkadb418:
     image: node:6.11.2
@@ -142,5 +149,6 @@ services:
       - NodeID=418
       - partitionnumber=384
       - IndexTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.historydevices
+      - GroupId=bmsgid
     network_mode: "host"
