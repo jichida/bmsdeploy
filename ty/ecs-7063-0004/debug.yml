@@ -1,6 +1,6 @@
 version: '2'
 services:
-  kafkadb411:
+  kafkadb1001:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -21,7 +21,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb412:
+  kafkadb1002:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -42,7 +42,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb413:
+  kafkadb1003:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -63,7 +63,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb414:
+  kafkadb1004:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -84,7 +84,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb415:
+  kafkadb1005:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -105,7 +105,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb416:
+  kafkadb1006:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -126,7 +126,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb417:
+  kafkadb1007:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -147,7 +147,7 @@ services:
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
     network_mode: "host"
-  kafkadb418:
+  kafkadb1008:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
