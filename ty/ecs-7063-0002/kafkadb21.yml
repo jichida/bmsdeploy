@@ -17,8 +17,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb222:
     image: node:6.11.2
@@ -37,8 +37,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb223:
     image: node:6.11.2
@@ -57,8 +57,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb224:
     image: node:6.11.2
@@ -77,8 +77,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb225:
     image: node:6.11.2
@@ -97,8 +97,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb226:
     image: node:6.11.2
@@ -117,8 +117,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb227:
     image: node:6.11.2
@@ -137,8 +137,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"
   kafkadb228:
     image: node:6.11.2
@@ -156,4 +156,7 @@ services:
       - NodeID=228
       - partitionnumber=384
       - kcmsg=30
+      - IndexTopic=bmsindex
+      - CurrentTopic=bmsdb.historytracks
+      - GroupId=bmsgidhistorytracks
     network_mode: "host"

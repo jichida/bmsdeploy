@@ -17,8 +17,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb232:
     image: node:6.11.2
@@ -37,8 +37,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb233:
     image: node:6.11.2
@@ -57,8 +57,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb234:
     image: node:6.11.2
@@ -77,8 +77,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb235:
     image: node:6.11.2
@@ -97,8 +97,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb236:
     image: node:6.11.2
@@ -117,8 +117,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb237:
     image: node:6.11.2
@@ -137,8 +137,8 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb238:
     image: node:6.11.2
@@ -157,6 +157,6 @@ services:
       - partitionnumber=384
       - kcmsg=30
       - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - CurrentTopic=bmsdb.realtimealarmraws
+      - GroupId=bmsgidrealtimealarmraws     
     network_mode: "host"
