@@ -18,7 +18,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb412:
     image: node:6.11.2
@@ -38,7 +38,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb413:
     image: node:6.11.2
@@ -58,7 +58,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb414:
     image: node:6.11.2
@@ -78,7 +78,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb415:
     image: node:6.11.2
@@ -98,7 +98,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb416:
     image: node:6.11.2
@@ -118,7 +118,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb417:
     image: node:6.11.2
@@ -138,7 +138,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"
   kafkadb418:
     image: node:6.11.2
@@ -158,5 +158,5 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
-      - GroupId=bmsgid
+      - GroupId=bmsgidhistorydevices
     network_mode: "host"

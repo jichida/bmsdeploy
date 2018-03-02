@@ -18,7 +18,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb432:
     image: node:6.11.2
@@ -38,7 +38,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb433:
     image: node:6.11.2
@@ -58,7 +58,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb434:
     image: node:6.11.2
@@ -78,7 +78,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb435:
     image: node:6.11.2
@@ -98,7 +98,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb436:
     image: node:6.11.2
@@ -118,7 +118,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb437:
     image: node:6.11.2
@@ -138,7 +138,7 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
   kafkadb438:
     image: node:6.11.2
@@ -158,5 +158,5 @@ services:
       - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
-      - GroupId=bmsgid
+      - GroupId=bmsgidrealtimealarmraws
     network_mode: "host"
