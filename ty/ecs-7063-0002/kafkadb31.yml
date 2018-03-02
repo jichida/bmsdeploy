@@ -15,6 +15,7 @@ services:
       - mongos=true
       - NodeID=231
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -34,6 +35,7 @@ services:
       - mongos=true
       - NodeID=232
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -53,6 +55,7 @@ services:
       - mongos=true
       - NodeID=233
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -72,6 +75,7 @@ services:
       - mongos=true
       - NodeID=234
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -91,6 +95,7 @@ services:
       - mongos=true
       - NodeID=235
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -110,6 +115,7 @@ services:
       - mongos=true
       - NodeID=236
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -129,6 +135,7 @@ services:
       - mongos=true
       - NodeID=237
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        
@@ -148,6 +155,7 @@ services:
       - mongos=true
       - NodeID=238
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid        

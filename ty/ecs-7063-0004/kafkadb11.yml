@@ -15,6 +15,7 @@ services:
       - mongos=true
       - NodeID=411
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -34,6 +35,7 @@ services:
       - mongos=true
       - NodeID=412
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -53,6 +55,7 @@ services:
       - mongos=true
       - NodeID=413
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -72,6 +75,7 @@ services:
       - mongos=true
       - NodeID=414
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -91,6 +95,7 @@ services:
       - mongos=true
       - NodeID=415
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -110,6 +115,7 @@ services:
       - mongos=true
       - NodeID=416
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -129,6 +135,7 @@ services:
       - mongos=true
       - NodeID=417
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
@@ -148,6 +155,7 @@ services:
       - mongos=true
       - NodeID=418
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid

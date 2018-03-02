@@ -15,6 +15,7 @@ services:
       - mongos=true
       - NodeID=431
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -34,6 +35,7 @@ services:
       - mongos=true
       - NodeID=432
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -53,6 +55,7 @@ services:
       - mongos=true
       - NodeID=433
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -72,6 +75,7 @@ services:
       - mongos=true
       - NodeID=434
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -91,6 +95,7 @@ services:
       - mongos=true
       - NodeID=435
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -110,6 +115,7 @@ services:
       - mongos=true
       - NodeID=436
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -129,6 +135,7 @@ services:
       - mongos=true
       - NodeID=437
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
@@ -148,6 +155,7 @@ services:
       - mongos=true
       - NodeID=438
       - partitionnumber=384
+      - kcmsg=30
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.realtimealarmraws
       - GroupId=bmsgid
