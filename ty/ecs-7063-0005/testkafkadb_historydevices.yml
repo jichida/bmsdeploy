@@ -17,7 +17,7 @@ services:
       - mongos=true
       - NodeID=999
       - partitionnumber=384
-      - kcmsg=30
+      - kcmsg=3000
       - IndexTopic=bmsindex
       - CurrentTopic=bmsdb.historydevices
       - GroupId=bmsgid
