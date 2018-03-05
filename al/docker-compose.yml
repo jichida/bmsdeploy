@@ -23,9 +23,6 @@ services:
        - "5012:5012"
     expose:
        - "5012"
-    depends_on:
-       - zookeeper
-       - kafka
   bmscatlserver:
     image: node:6.11.2
     restart: always
