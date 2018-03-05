@@ -1,0 +1,23 @@
+version: '2'
+services:
+  bmscatlserver:
+    image: node:6.11.2
+    restart: always
+    command: node ./index.js
+    working_dir: /app
+    volumes:
+      - /root/app/bmscatl/deploy/restfulsrv:/app
+      - /root/app/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+    environment:
+      - MONGO_URL=mongodb://172.17.0.1:27018/bmscatl
+      - KAFKA_HOST=172.17.0.1:2181
+      - listenport=5013
+      - rooturl=http://bmscatl.com28.cn
+      - jpush_appkey=a7179b88ad87fa6b261a99db
+      - jpush_mastersecret=b4a1a84f50dffd8e9a36d96c
+      - mongos=false
+    network_mode: "host"
+    ports:
+       - "5013:5013"
+    expose:
+       - "5013"
