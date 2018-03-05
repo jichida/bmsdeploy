@@ -8,6 +8,7 @@ services:
     volumes:
       - /root/app/bms/deploy/restfulsrv:/app
       - /root/app/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://172.17.0.1:27018/bms
       - KAFKA_HOST=172.17.0.1:2181
@@ -32,6 +33,7 @@ services:
     volumes:
       - /root/app/bmscatl/deploy/restfulsrv:/app
       - /root/app/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://172.17.0.1:27018/bmscatl
       - KAFKA_HOST=172.17.0.1:2181
