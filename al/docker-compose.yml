@@ -72,22 +72,13 @@ services:
        - mongodb
        - zookeeper
        - kafka
-  mongodb:
-    image:  mongo:3.4
-    restart: always
-    expose:
-       - "27018"
-    volumes:
-       - "/var/db100/dbdata:/data/db -d"
-    ports:
-       - "27018:27017"
   bmscatlserver:
     image: node:6.11.2
     restart: always
     command: node ./index.js
     working_dir: /app
     volumes:
-      -  /root/app/bmscatl/deploy/restfulsrv:/app
+      - /root/app/bmscatl/deploy/restfulsrv:/app
       - /root/app/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
       - MONGO_URL=mongodb://172.17.0.1:27018/bmscatl
