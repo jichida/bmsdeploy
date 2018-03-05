@@ -53,23 +53,6 @@ services:
     depends_on:
        - zookeeper
        - kafka
-  kafkadb:
-    image: node:6.11.2
-    restart: always
-    command: node ./index.js
-    working_dir: /app
-    volumes:
-      - /root/app/bms/deploy/kafkadb:/app
-      - /root/app/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
-    environment:
-      - MONGO_URL=mongodb://172.17.0.1:27018/bms
-      - KAFKA_HOST=172.17.0.1:2181
-      - mongos=false
-      - NodeID=9
-    network_mode: "host"
-    depends_on:
-       - zookeeper
-       - kafka
   bmscatlserver:
     image: node:6.11.2
     restart: always
@@ -91,17 +74,3 @@ services:
        - "5013:5013"
     expose:
        - "5013"
-  bmscatlkafkadb:
-    image: node:6.11.2
-    restart: always
-    command: node ./index.js
-    working_dir: /app
-    volumes:
-      - /root/app/bmscatl/deploy/kafkadb:/app
-      - /root/app/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
-    environment:
-      - MONGO_URL=mongodb://172.17.0.1:27018/bmscatl
-      - KAFKA_HOST=172.17.0.1:2181
-      - mongos=false
-      - NodeID=10
-    network_mode: "host"
