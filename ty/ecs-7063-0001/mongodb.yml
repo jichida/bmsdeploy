@@ -11,9 +11,7 @@ services:
       - "20001"
     environment:
       TERM: xterm
-    resources:
-      limits:
-          memory: 8192M
+    mem_limit: 8192MB
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /catlcluster/mongo_cluster/bmsshardres1/db:/data/db
@@ -28,9 +26,7 @@ services:
       - "20002"
     environment:
       TERM: xterm
-    resources:
-      limits:
-          memory: 8192M
+    mem_limit: 8192MB
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /catlcluster/mongo_cluster/bmsshardres2/db:/data/db
@@ -45,9 +41,7 @@ services:
       - "20003"
     environment:
       TERM: xterm
-    resources:
-      limits:
-          memory: 8192M
+    mem_limit: 8192MB
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /catlcluster/mongo_cluster/bmsshardres3/db:/data/db
