@@ -28,6 +28,7 @@ services:
       - listenport=5012
       - mongos=true
       - rooturl=http://101.89.141.109:81
+      - logdir=/log
     network_mode: "host"
     ports:
        - "5012:5012"

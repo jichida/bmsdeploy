@@ -9,6 +9,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -19,6 +20,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb112:
     image: node:6.11.2
@@ -29,6 +31,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -39,6 +42,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb113:
     image: node:6.11.2
@@ -49,6 +53,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -59,6 +64,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb114:
     image: node:6.11.2
@@ -69,6 +75,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -79,6 +86,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb115:
     image: node:6.11.2
@@ -89,6 +97,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -99,6 +108,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb116:
     image: node:6.11.2
@@ -109,6 +119,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -119,6 +130,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb117:
     image: node:6.11.2
@@ -129,6 +141,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -139,6 +152,7 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
   kafkadb118:
     image: node:6.11.2
@@ -149,6 +163,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
@@ -159,4 +174,5 @@ services:
       - IndexTopic=bmsindex
       - CurrentTopic=bmsindex
       - GroupId=bmsgid
+      - logdir=/log
     network_mode: "host"
