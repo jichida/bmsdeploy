@@ -13,10 +13,10 @@ services:
     environment:
       - DEBUG=dbh:handler,dbh:alarm,-mquery
       - DEBUG_COLORS=1
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsptest
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmsp
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=777
+      - NodeID=666
       - partitionnumber=384
       - kcmsg=1000
       - IndexTopic=pbmsindex
