@@ -19,6 +19,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb142:
     image: node:6.11.2
@@ -39,6 +40,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb143:
     image: node:6.11.2
@@ -59,6 +61,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb144:
     image: node:6.11.2
@@ -79,6 +82,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb145:
     image: node:6.11.2
@@ -99,6 +103,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb146:
     image: node:6.11.2
@@ -119,6 +124,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb147:
     image: node:6.11.2
@@ -139,6 +145,7 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
   pkafkadb148:
     image: node:6.11.2
@@ -159,4 +166,5 @@ services:
       - IndexTopic=pbmsindex
       - CurrentTopic=pbmsindex
       - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
