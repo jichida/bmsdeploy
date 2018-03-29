@@ -1,0 +1,36 @@
+version: '2'
+services:
+  nginxbmsp:
+    image: nginx
+    restart: always
+    network_mode: "host"
+    ports:
+        - "81:81"
+    expose:
+       - "81"
+    volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ./nginx.conf:/etc/nginx/conf.d/default.conf
+        - /root/bms/deploy/dist:/usr/share/nginx/html
+  bmsserverp:
+    image: node:6.11.2
+    restart: always
+    command: node --max-old-space-size=8192 ./index.js
+    working_dir: /app
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /root/bms/deploy/restfulsrv:/app
+      - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
+    environment:
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
+      - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
+      - listenport=5012
+      - mongos=true
+      - rooturl=http://101.89.141.109:81
+      - logdir=/log
+    network_mode: "host"
+    ports:
+       - "5012:5012"
+    expose:
+       - "5012"

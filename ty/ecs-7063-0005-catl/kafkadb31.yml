@@ -1,6 +1,6 @@
 version: '2'
 services:
-  kafkadb441:
+  pkafkadb131:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -9,18 +9,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=441
+      - NodeID=131
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb442:
+  pkafkadb132:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -29,18 +31,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=442
+      - NodeID=132
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb443:
+  pkafkadb133:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -49,18 +53,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=443
+      - NodeID=133
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb444:
+  pkafkadb134:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -69,18 +75,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=444
+      - NodeID=134
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb445:
+  pkafkadb135:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -89,18 +97,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=445
+      - NodeID=135
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb446:
+  pkafkadb136:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -109,18 +119,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=446
+      - NodeID=136
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb447:
+  pkafkadb137:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -129,18 +141,20 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=447
+      - NodeID=137
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"
-  kafkadb448:
+  pkafkadb138:
     image: node:6.11.2
     restart: always
     command: node --max-old-space-size=8192 ./index.js
@@ -149,14 +163,16 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
+      - /root/bms/deploy/dist/log:/log
     environment:
       - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
-      - NodeID=448
+      - NodeID=138
       - partitionnumber=384
-      - kcmsg=30
-      - IndexTopic=bmsindex
-      - CurrentTopic=bmsindex
-      - GroupId=bmsgid        
+      - kcmsg=1000
+      - IndexTopic=pbmsindex
+      - CurrentTopic=pbmsindex
+      - GroupId=pbmsgid
+      - logdir=/log
     network_mode: "host"

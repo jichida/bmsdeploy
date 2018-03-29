@@ -1,0 +1,80 @@
+#进数据库
+docker run -it mongo:3.4 bash
+mongo --host 192.168.1.20:27007
+#指定bmsp分片生效
+use admin
+db.runCommand( { enablesharding :"bmsp"});
+#指定数据库里需要分片的集合和片键
+use bmsp
+db.historydevices.ensureIndex({DeviceId:1,TimeKey:1},{ background: true });
+db.historytracks.ensureIndex({DeviceId:1,TimeKey:1},{ background: true });
+db.realtimealarmraws.ensureIndex({DeviceId:1,TimeKey:1},{ background: true });
+db.realtimealarms.ensureIndex({DeviceId:'hashed'},{ background: true });
+#设置其他索引
+
+db.datadicts.createIndex({ 'name' : 'hashed'})
+
+db.devices.createIndex({'DeviceId':'hashed'});
+db.devices.createIndex({'SN64':1});
+
+db.historytracks.createIndex({'GUID':1});
+db.historytracks.createIndex({'DeviceId':'hashed'});
+db.historytracks.createIndex({'SN64':1});
+db.historytracks.createIndex({'TimeKey':1});
+db.historytracks.createIndex({'GPSTime':1});
+db.historytracks.getIndexes();
+
+
+db.historydevices.createIndex({'GUID':1});
+db.historydevices.createIndex({'DeviceId':'hashed'});
+db.historydevices.createIndex({'SN64':1});
+db.historydevices.createIndex({'TimeKey':1});
+db.historydevices.createIndex({'DataTime':1});
+db.historydevices.getIndexes();
+
+
+db.realtimealarmraws.createIndex({'GUID':1});
+db.realtimealarmraws.createIndex({'DeviceId':'hashed'});
+db.realtimealarmraws.createIndex({'SN64':1});
+db.realtimealarmraws.createIndex({'TimeKey':1});
+db.realtimealarmraws.createIndex({'warninglevel':1});
+db.realtimealarmraws.createIndex({'DataTime':1});
+db.realtimealarmraws.getIndexes();
+
+db.realtimealarms.createIndex({'CurDay':1});
+db.realtimealarms.createIndex({'SN64':1});
+db.realtimealarms.createIndex({'DeviceId':'hashed'});
+db.realtimealarms.createIndex({'warninglevel':1});
+db.realtimealarms.createIndex({'DataTime':1});
+db.realtimealarms.getIndexes();
+
+db.geo_osm.createIndex({ 'geometry' : "2dsphere" }) ;
+
+#===clear====
+use config
+db.collections.remove( { _id: "bmsp.historydevices" },{"multi":true} )
+db.chunks.remove( { ns: "bmsp.historydevices" } ,{"multi":true})
+db.locks.remove( { _id: "bmsp.historydevices" } ,{"multi":true})
+db.collections.remove( { _id: "bmsp.historytracks" },{"multi":true} )
+db.chunks.remove( { ns: "bmsp.historytracks" },{"multi":true} )
+db.locks.remove( { _id: "bmsp.historytracks" } ,{"multi":true})
+db.collections.remove( { _id: "bmsp.realtimealarmraws" } ,{"multi":true})
+db.chunks.remove( { ns: "bmsp.realtimealarmraws" } ,{"multi":true})
+db.locks.remove( { _id: "bmsp.realtimealarmraws" } ,{"multi":true})
+db.collections.remove( { _id: "bmsp.realtimealarms" } ,{"multi":true})
+db.chunks.remove( { ns: "bmsp.realtimealarms" } ,{"multi":true})
+db.locks.remove( { _id: "bmsp.realtimealarms" },{"multi":true} )
+
+use admin
+db.adminCommand("flushRouterConfig")
+#===clear====
+
+
+
+use admin
+db.runCommand( { shardcollection : "bmsp.historydevices",key : {DeviceId:1,TimeKey:1} } )
+db.runCommand( { shardcollection : "bmsp.historytracks",key : {DeviceId:1,TimeKey:1} } )
+db.runCommand( { shardcollection : "bmsp.realtimealarmraws",key : {DeviceId:1,TimeKey:1} })
+db.runCommand( { shardcollection : "bmsp.realtimealarms",key : {DeviceId:'hashed'} }  )
+====================
+docker run -it -v /root/bmsdeploy/ty/ecs-7063-0005-p:/tmp mongo:3.4 bash -c 'mongodump -v --host 192.168.1.20:27007 --db bmsp --out=/tmp'

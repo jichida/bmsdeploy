@@ -10,7 +10,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=431
@@ -30,7 +30,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=432
@@ -50,7 +50,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=433
@@ -70,7 +70,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=434
@@ -90,7 +90,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=435
@@ -110,7 +110,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=436
@@ -130,7 +130,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=437
@@ -150,7 +150,7 @@ services:
       - /root/bms/deploy/kafkadb:/app
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
     environment:
-      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bms
+      - MONGO_URL=mongodb://192.168.1.20:27007,192.168.1.114:27007/bmscatl
       - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
       - mongos=true
       - NodeID=438
